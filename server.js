@@ -9,16 +9,15 @@ app.use("/add-new-motor", (req, res,next) =>{
     `
     <h1>New Motor</h1>
     <form action="/motor" method="POST">
-        <input type="text"  placeholder="motor name"/> <br>
-         <input type="text"  placeholder="price"/> <br>
-        <input type="text" placeholder="ID"/> <br>
+        <input type="text" placeholder="motor name" name="name" /> 
+         <input type="text"  placeholder="ID"  name="id"/>
         <input type="submit" value="send"/>
     </form>
     `
  )   
 })
 
-app.use("/student", (req,res,next)=>{
+app.use("/motor", (req,res,next)=>{
 console.log(req.body);
 //res.send('<h1>Student List</h1>')
 res.redirect("/")
