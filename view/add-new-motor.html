@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Homepage</a>
+            </li>
+            <li>
+                <a href="/add-new-motor">Add Motor</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <h1>New Motor</h1>
+        <h1>Add new Motor</h1>
+        <form action="/motor" method="POST">
+            <input type="text" placeholder="motor name" name="name" /> 
+             <input type="text"  placeholder="ID"  name="id"/>
+            <input type="submit" value="send"/>
+        </form>
+    </div>
+</body>
+</html>
